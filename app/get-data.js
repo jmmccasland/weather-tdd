@@ -1,4 +1,4 @@
-export default function (searchTerm) {
-  return fetch(`https://cors-anywhere.herokuapp.com/hummingbird.me/api/v1/search/anime?query=${searchTerm}`)
-    .then((res) => res.json());
+export default function (lat, lng) {
+  return fetch(`https://api.darksky.net/forecast/${process.env.API_KEY}/${lat},${lng}`)
+    .then(res => res.json());
 }
