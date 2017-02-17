@@ -5,3 +5,4 @@ test('it is working', (assert) => {
 });
 
 import './current-weather-test';
+import './daily-list-test';
